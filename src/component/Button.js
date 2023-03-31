@@ -2,10 +2,10 @@ import React from "react";
 import { TouchableOpacity, StyleSheet, View } from "react-native";
 import { Feather } from '@expo/vector-icons';
 
-const Button = () => {
+const Button = ({onPress}) => {
     return (
         <View>
-            <TouchableOpacity style={styles.btn}>
+            <TouchableOpacity style={styles.btn} onPress={onPress}>
              <Feather name="plus" size={30} color="white" />
             </TouchableOpacity>
         </View>
